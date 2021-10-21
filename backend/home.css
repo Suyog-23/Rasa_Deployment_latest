@@ -1,0 +1,25 @@
+.rw-conversation-container .rw-reply{
+    border: none;
+    background-color: #FC5C65;
+}
+
+.rw-launcher{
+    background-color: #FC5C65;
+}
+
+.rw-conversation-container .rw-header{
+    background-color: #FC5C65;
+}
+
+.rw-conversation-container .rw-client{
+    background-color: #FC5C65;
+}
+
+a{
+    color: #ff2477;
+    text-decoration: none;
+}
+
+.rw-conversation-container .rw-send .rw-send-icon-ready{
+    fill: #3b2d47;
+}

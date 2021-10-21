@@ -1,0 +1,261 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - helo alma
+    - hey alma! How are you?
+    - hehe alma
+    - hehe
+    - hello
+    - hola alma
+    - hi
+    - hello there
+    - alma, my girl!
+    - who are you?
+    - alma, what do you do 
+    - how are you?
+    - good morning
+    - good evening, alma
+    - moin
+    - dear alma, moin!
+    - hey there
+    - let's go
+    - alma, can you help me?
+    - someone there?
+    - i need help
+    - hey, anyone here?
+    - hey dude
+    - anyone chatbot developer here??
+    - chatbot?
+    - bot you here?
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - good afternoon, alma
+
+- intent: goodbye
+  examples: |
+    - cu
+    - see you!
+    - bye, alma
+    - nice meeting you!
+    - need to leave 
+    - need to go, alma, bye!
+    - see ya later
+    - good by
+    - cee you later
+    - take care!
+    - good night
+    - bye
+    - goodbye
+    - good bye, alma
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: contact_us
+  examples: |
+    - how to contact the company?
+    - company contact
+    - i have a doubt 
+    - doubt
+    - how to contact
+    - contact us
+    - give me your mobile number
+    - your email?
+    - how can I contact jack
+    - alma, your contact?
+    - how can i get in touch
+    - contact details
+    - i need to contact you
+    - i have a doubt
+    - doubt
+    - can i call you?
+    - get on a call?
+    - i need to contact you
+    - email address?
+    - can I have your email?
+    - i need to talk to someone
+    - talk to a person
+    - any person online?
+    - get me in touch with someone
+    - i have a different concern
+    - my concern is different
+    - alma, i'm different
+
+- intent: user_email
+  examples: |
+    - my email is [suyog@gmail.com](email)
+    - ok, [s@yiu.in](email) here you go
+    - [currsive@currsive.co.in](email)
+    - [simple@suyog.io](email)
+    - email: [suyog@gmail.com](email)
+    - [damn@gmail.com](email)
+    - [okjone@gmail.com](email) is my email
+    - alma, note it down, [fofo@insty.co.in](email)
+    - you can contact me at [giri@giri.com](email)
+    - here you go, [suyog@you.com](email)
+    - ok sure, it is [gun@fun.dev](email)
+    - wait a sec, it goes as [system.co@gio.com](email)
+    - [suyog.savalkar@gunicorn.com](email) is my contact
+    - [contact.gun@gmail.com](email)
+    - [hey.hi@gmail.com](email) : email
+    - it goes as [suyog@gmail.com](email)
+
+- intent: platform_and_need
+  examples: |
+    - I want a chatbot for [Facebook](platform)
+    - bot needed for [Instagram](platform) uregently
+    - need a chatbot for my [website](platform)
+    - i need a chatbot for selling to sell my [shirts](product) on [instagram](platform)
+    - [messanger](platform) bot to generate [leads](product)
+    - i want to sell [designs](product) on [instagram](platform)
+    - can u make a chatbot for [telegram](platform)
+    - a [restaurant](product) chatbot for [facebook](platform) messenger
+    - we want a chatbot to increase [sales](product) and connect it to our [website](platform)
+    - is it possible to have a chatbot for [whatsapp](platform) ?
+    - [facebook](platform) chatbot?
+    - a chatbot for [instagram](platform) 
+    - want it for my [website](platform)
+    - [whatsapp](platform) bot
+    - an assistant to generate [leads](product) using [fb](platform)
+    - [slack](platform) assistant
+    - a bot for [web](platform) 
+    - [fb] chatbot
+    - a chatbot that would work on the [web](platform) 
+    - i need a bot for [insta](platform) 
+    - [insta](platform)  bot needed
+    - develop a bot for [telegram](platform) 
+    - a [discord](platform)  bot
+    - a [webapp](platform)  bot
+    - we need a [fb](platform) 
+    - [fb](platform) 
+    - [insta](platform) 
+    - [tele](platform) 
+    - [dis](platform) 
+    - [telegram](platform) 
+    - [discord](platform) 
+    - a bot for [rocketchat](platform) 
+
+- intent: pricing_plans
+  examples: |
+    - what are the pricing plans
+    - pricing 
+    - plans available?
+    - tell me about the costs
+    - are the pricing affordable?
+    - can i know about the pricing 
+    - bot prices
+    - chatbot cost
+    - combo plan available?
+    - pricing plans
+    - costing plans
+    - what is the cost of one chatbot for facebook?
+    - costing plans
+    - how much will 2 bots cost?
+    - alma, how much will you charge for a bot?
+    - cost of a single bot
+    - i want the pricing plans
+    - what is the cost?
+    - cost
+    - different plans and pricings
+    - what are the available pricing plans
+
+- intent: plan_duration
+  examples: |
+    - more info about the [yearly](duration) plan
+    - tell me about the [monthly](duration) cost
+    - [one-time](duration) pricing?
+    - what about the [combo](duration) deal? 
+    - [yearly](duration)
+    - [monthly](duration) plan
+    - i am interested in the [one-time] plan
+    - mm, what about the [combo](duration) plan
+    - want to go with the [combo](duration) plan
+    - tell me more about the [one-time](duration) offer
+    - talk about the [month](duration) plan
+    - is there a [one-time](duration) plan?
+    - [combo](duration) pricing plan
+    - the one named [monthly](duration)
+    - i would pay per [year](duration)
+    - i would prefer the [combo](duration) one
+    - tell more about the [one-time](duration) pricing and it's features
+    - features of the per [month](duration) plan
+    - umm, ok, [monthly](duration)
+    - explain the [year](duration) plan
+
+- intent: three_months_plan
+  examples: |
+    - i want to know about the three month plan
+    - show me the three month discounts
+    - 3 months plan
+    - i want more info on the three month plan
+    - three months discount
+    - the discounted plan
+    - i want the discounts
+    - discounted plans
+    - what about the three months plan
+    - tell me about the three months plan
+    - the plan with discounts
+    - three months
+    - plans for the 3 months
+    - any discounts?
+    - discounted plans for three months
+    - discounts?
+    - we need discounts
+    - I can't afford this 
+    - any offers going on?
+    - 3 months offer
+
+- intent: plan_selected
+  examples: |
+    - i want the [basic](plan) plan
+    - [startup](plan) plan
+    - i would prefer the [growth](plan) one
+    - the [scale](plan) plan
+    - [basic](plan)
+    - [scale](plan)
+    - plan : [growth](plan)
+    - [scale] plan
+    - the plan by the name [basic](plan)
+    - well, the [basic](plan) plan
+    - i'll go with the [startup](plan) plan
+    - the [scale](plan) plan
+    - [basic](plan) is best for me
+    - the [growth] one works for me
+    - [scale](plan) seems to suit us
+    - [growth](plan) looks like a perfect choice
+    - for me [basic](plan) plan is fine
+
+- intent: my_bot
+  examples: |
+    - i want a bot
+    - book me a chatbot
+    - i also need a chatbot
+    - give me a bot
+    - a basic bot needed
+    - can u make a bot for me?
+    - need a website chatbot
+    - need a chatbot
+    - setup a chatbot
+    - i want a demo
+    - demo
+    - demo bot
+    - i want to talk about the chatbot
+    - hey a chatbot is needed
+    - let's talk about the chatbot
+    - a meeting for chatbot
+    - book bot
+    - book a startup bot
+    - a bot for a startup
+    - i need a bot for collecting leads
+    - get me a bot
+    - get a bot
+    - get bot
+    - bot get
+    - give me a bot
+    - how to get a bot?
+    - how can i get a chatbot?

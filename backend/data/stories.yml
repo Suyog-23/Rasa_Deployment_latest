@@ -1,0 +1,34 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: plan acc to duration
+  steps:
+  - intent: plan_duration
+  - action: action_plan_duration
+
+- story: query contact
+  steps:
+  - intent: contact_us
+  - action: utter_contact_query
+
+- story: three months discount only
+  steps:
+  - intent: three_months_plan
+  - action: action_three_months
+
+- story: pricing only
+  steps:
+  - intent: pricing_plans
+  - action: utter_pricing
+

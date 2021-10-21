@@ -1,0 +1,104 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - contact_us
+  - user_email
+  - platform_and_need
+  - pricing_plans
+  - plan_duration
+  - three_months_plan
+  - plan_selected
+  - my_bot
+
+entities:
+  - email
+  - platform
+  - product
+  - duration
+  - plan
+
+slots:
+  email:
+    type: text
+    influence_conversation: true
+  platform:
+    type: text
+    influence_conversation: true
+  product:
+    type: text
+    influence_conversation: true
+  duration:
+    type: text
+    influence_conversation: true
+  plan:
+    type: text
+    influence_conversation: true
+
+actions:
+  - action_plan_duration
+  - action_three_months
+  - action_calendly
+
+responses:
+  utter_greet:
+  - text: "Hey! Alma here 😊. Welcome, how can I help you today?"
+    quick_replies:
+    - title: "Get your assistant!"
+      payload: "/my_bot"
+    - title: "You missed the discounts? 👀"
+      payload: "/three_months_plan"
+    - title: "Pricing"
+      payload: "/pricing_plans"
+    - title: "Contact Us"
+      payload: "/contact_us"
+
+  utter_goodbye:
+  - text: "Had a great conversation. See you soon!"
+    quick_replies:
+    - title: "Hope you didn't miss the discount? 👀"
+      payload: "/three_months_plan"
+
+  utter_pricing:
+  - text: "We offer various plans to make it best for diiferent customers! Which plans are you interested in?"
+    quick_replies:
+    - title: "Monthly Plans"
+      payload: "/plan_duration"
+    - title: "The 3 Months Discount"
+      payload: "/three_months_plan"
+    - title: "Get your assistant!"
+      payload: "/my_bot"
+
+  utter_contact_query:
+  - text: "You can send an email at [suyog231002@gmail.com](mailto:suyog231002@gmail.com)"
+
+  # these are for the bot form form
+  utter_ask_email:
+  - text: "Journey of growth 🚀. What is your business email?"
+
+  utter_ask_platform:
+  - text: "Which platform you want the bot for? Eg. Facebook, Slack, Website?"
+
+  utter_ask_plan:
+  - text: "Which plan seems to match you the most?"
+
+  utter_bot_booked:
+  - text: "That's just awesome! Your business is about to skyrocket 😎. [Confirm your demo here](https://calendly.com/suyog_demo/discover-growth?email={email})"
+
+
+forms:
+  get_bot_form:
+    email:
+      - type: from_entity
+        entity: email
+    platform:
+      - type: from_entity
+        entity: platform
+    plan:
+      - type: from_entity
+        entity: plan
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
