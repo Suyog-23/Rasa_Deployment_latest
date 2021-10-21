@@ -1,4 +1,4 @@
-FROM rasa/rasa-sdk:latest
+FROM rasa/rasa-sdk:2.6.0
 
  # The Rasa SDK image runs as non-root user by default. Hence, you have to switch
  # back to the `root` user if you want to install additional dependencies
