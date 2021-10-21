@@ -6,7 +6,7 @@ services:
       volumes:
         - ./nginx.conf:/etc/nginx/nginx.conf
       ports:
-        - 70:70
+        - 80:80
       depends_on: 
         - rasa
         - action_server
